@@ -1,0 +1,29 @@
+# Port exhibition
+server:
+    port: ${SERVER_PORT:8082}
+
+# spring boot configurations
+spring:
+    application:
+        name: vg.ms.student
+    data:
+        mongodb:
+            uri: mongodb+srv://amirarbieto:n1230IGFtm6682Kj@artemiosolutions.pripjnm.mongodb.net/artemiosolutions?retryWrites=true&w=majority
+
+# Microservice health meter
+management:
+  endpoint:
+    health:
+      show-details: always
+
+# Empoit de actuator  
+
+api:
+   version: api/v1
+
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/student
