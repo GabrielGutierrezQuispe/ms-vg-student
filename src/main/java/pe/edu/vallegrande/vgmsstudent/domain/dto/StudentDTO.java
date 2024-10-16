@@ -4,25 +4,26 @@ import lombok.Data;
 
 @Data
 public class StudentDTO {
+    private String documentType;
+    private String documentNumber;
     private String lastNamePaternal;
     private String lastNameMaternal;
     private String names;
-    private String documentType;
-    private String documentNumber;
     private String sex;
     private String birthDate;
     private String birthCountry;
-    private String ubigeoBirth; // Código RENIEC para el ubigeo de nacimiento
-    private String ubigeoResidence; // Código RENIEC para el ubigeo de residencia
+    private String ubigeoBirth; // Código RENIEC como String
+    private String ubigeoResidence; // Código RENIEC como String
     private String email;
     private String phoneNumber;
     private String maritalStatus;
     private String educationLevel;
-    private Boolean disability; // Cambiar a Boolean
-    private String disabilityType;
-    private Boolean internetAccess; // Cambiar a Boolean
-    private Boolean employed; // Cambiar a Boolean
+    private Boolean disability;
+    private String disabilityType; // Puede ser null
+    private Boolean internetAccess;
+    private Boolean employed;
     private String occupation;
     private String nativeLanguage;
-    private String address; // Agregado el campo address
+    private String address;
+    private String status; // Opcional
 }
